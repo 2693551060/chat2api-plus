@@ -31,9 +31,27 @@ database:
 AUTO_DELETE_CONV: true
 # 网关地址
 API_SERVER: "你的网关地址"
-# sk
-API_AUTH_KEY: "123"
-# 图床配置
+# 网关访问密码
+API_SERVER_AUTH_KEY: "你的网关访问密码"
+# sk-xxx 请求验证api key
+API_AUTH_KEY: "sk-xxxx"
+# 图床配置(本地)
 ossSetting:
   type: local
   domain: "http://127.0.0.1:8700" #  部署域名或ip+端口
+
+# 图床配置(阿里云oss)
+# ossSetting:
+#   type: oss
+#   bucket: oaitest
+#   endpoint: "https://oss-us-west-1.aliyuncs.com"
+#   accessKey: ""
+#   secretKey: ""
+
+# 图床配置(千牛云koda)
+# ossSetting:
+#   type: koda
+#   bucket: oaitest
+#   domain: "加速域名"
+#   accessKey: ""
+#   secretKey: ""
