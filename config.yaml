@@ -1,0 +1,39 @@
+server:
+  logPath: "./logs"                 # 日志文件存储目录路径，建议使用绝对路径。默认为空，表示关闭
+  errorLogPattern: "error-{Ymd}.log"  # 异常错误日志文件格式。默认为"error-{Ymd}.log"
+  accessLogEnabled: true              # 是否记录访问日志。默认为false
+  accessLogPattern: "access.log" # 访问日志文件格式。默认为"access-{Ymd}.log"
+  logger:
+    path: "./logs"   # 日志文件路径。默认为空，表示关闭，仅输出到终端
+    file: "info.log" # 日志文件格式。默认为"{Y-m-d}.log"
+logger:
+  path: "./logs"   # 日志文件路径。默认为空，表示关闭，仅输出到终端
+  file: "info.log" # 日志文件格式。默认为"{Y-m-d}.log"
+  level: "all"         # 日志输出级别
+  rotateSize: 104857600
+  rotateExpire: 24h          # 按照日志文件时间间隔对文件滚动切分。默认为0，表示关闭滚动切分特性
+  rotateBackupExpire: 720h             # 按照切分的文件有效期清理切分文件，当滚动切分特性开启时有效。默认为0，表示不备份，切分则删除
+  rotateCheckInterval: "1h"          # 滚动切分的时间检测间隔，一般不需要设置。默认为1小时
+
+database:
+  default: # 数据源名称,当不指定数据源时 default 为默认数据源
+    type: "mysql" # 数据库类型
+    host: "mysql" # 数据库地址
+    port: "3306" # 数据库端口
+    user: "root" # 数据库用户名
+    pass: "123456" # 数据库密码
+    name: "chat2api" # 数据库名称
+    charset: "utf8mb4" # 数据库编码
+    timezone: "Asia/Shanghai" # 数据库时区
+#    debug: true # 是否开启调试模式，开启后会打印SQL日志
+
+#自动删除对话记录
+AUTO_DELETE_CONV: true
+# 网关地址
+API_SERVER: "你的网关地址"
+# sk
+API_AUTH_KEY: "123"
+# 图床配置
+ossSetting:
+  type: local
+  domain: "http://127.0.0.1:8700" #  部署域名或ip+端口
