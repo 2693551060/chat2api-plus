@@ -29,6 +29,8 @@ database:
 
 #自动删除对话记录
 AUTO_DELETE_CONV: true
+#启用免登3.5
+EnableFree35 : false
 # 网关地址
 API_SERVER: "你的网关地址"
 # 网关访问密码
