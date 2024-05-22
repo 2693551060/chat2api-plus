@@ -32,9 +32,9 @@ services:
       image: containrrr/watchtower
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
-      command: --scope hanglegehang-chatgpt-gateway-node --cleanup --interval 600
+      command: --scope hanglegehang-wm-chat2api --cleanup --interval 600
       restart: always
       environment:
         - TZ=Asia/Shanghai
       labels:
-        - "com.centurylinklabs.watchtower.scope=hanglegehang-chatgpt-gateway-node"
+        - "com.centurylinklabs.watchtower.scope=hanglegehang-wm-chat2api"
