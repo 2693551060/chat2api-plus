@@ -38,8 +38,12 @@ ModelConvert:
 LICENCE: "授权码"
 #自动删除对话记录
 AUTO_DELETE_CONV: true
-#启用免登3.5
+#是否启用免登3.5
 EnableFree35 : false
+#是否启用权重
+EnableWeight: true
+#是否启用工具调用痕迹
+EnableToolText: true
 # 网关地址
 API_SERVER: "你的网关地址"
 # 网关访问密码
