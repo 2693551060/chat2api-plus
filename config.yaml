@@ -21,7 +21,7 @@ database:
     host: "mysql" # 数据库地址
     port: "3306" # 数据库端口
     user: "root" # 数据库用户名
-    pass: "123456" # 数据库密码
+    pass: "qiueoq1920913" # 数据库密码
     name: "chat2api" # 数据库名称
     charset: "utf8mb4" # 数据库编码
     timezone: "Asia/Shanghai" # 数据库时区
